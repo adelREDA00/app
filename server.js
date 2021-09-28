@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
-
-app.listen(5500, () => {
+const port = process.env.PORT
+app.listen(port, () => {
     console.log(`Starting server at `);
   });
   app.use(express.static('public'));
